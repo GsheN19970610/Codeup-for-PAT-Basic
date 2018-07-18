@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	int a1,a2,b1,b2,c1,c2;
+	int T,i,j,k;
+	scanf("%d",&T);
+	while(T--)
+	{
+		scanf("%d%d%d",&a1,&b1,&c1);
+		scanf("%d%d%d",&a2,&b2,&c2);
+		if(a1>a2)
+			printf("First\n");
+		else if(a1<a2)
+			printf("Second\n");
+		else if(a1==a2)
+		{
+			if(b1>b2)
+				printf("First\n");
+			else if(b1<b2)
+				printf("Second\n");
+			else if(b1==b2)
+			{
+				if(c1>c2)
+					printf("First\n");
+				else if(c1<c2)
+					printf("Second\n");
+				else
+					printf("Same\n");
+			}
+		}
+	}
+	return 0;
+}

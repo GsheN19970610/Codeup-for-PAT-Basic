@@ -1,0 +1,52 @@
+/*#include<stdio.h>
+int main()
+{
+	int n,i,a,count[]={0};
+	while(scanf("%d",&n)!=EOF)
+	{
+		for(i=0;i<n;i++)
+		{
+			if(n==0)
+				break;
+			else
+			{
+				scanf("%d",&a);
+				count[i]=count[i]+a;
+			}
+		}
+		for(i=0;i<n;i++)
+			printf("%d",count[i]);
+	}
+	return 0;
+}*/
+
+/*#include<stdio.h>
+int main()
+{
+	int a[]={0};				//如这里定义一个位置大小的数组,输出的第一个值会被确定为0
+	printf("%d,%d",a[0],a[1]);	之后比如a[1]以及a[2]诸如此类会给一个任意数字
+	return 0;
+}*/
+
+
+#include<stdio.h>
+int main()
+{
+	int n,i,a,count;
+	while(scanf("%d",&n)!=EOF)
+	{
+		count=0;
+		if(n==0)
+			break;
+		else
+		{
+			for(i=0;i<n;i++)
+			{
+				scanf("%d",&a);
+				count=count+a;
+			}
+		}
+		printf("%d\n",count);				//这里我修改过之后又忘记了加\n
+	}
+	return 0;
+}*/

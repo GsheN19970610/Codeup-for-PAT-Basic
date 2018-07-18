@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int a,n,m,i,j,count=0;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&m);
+		count=0;
+		for(j=0;j<m;j++)				//这里不应该继续用i了,不然会导致计算错误
+		{
+			scanf("%d",&a);
+			count=count+a;
+		}
+		printf("%d\n\n",count);			//别忘了加\n
+	}
+	return 0;
+}

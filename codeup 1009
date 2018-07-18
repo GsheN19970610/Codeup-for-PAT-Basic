@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	float i,sum=0;
+	int count=0;
+	while(scanf("%f",&i)!=EOF)
+	{
+		sum=sum+i;
+		count++;
+	}
+	printf("￥%.2f",sum/count);
+	return 0;
+}

@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int num[210]={0};
+	int i,n,x;
+	while(scanf("%d",&n)!=EOF)  //绝对不能省略
+	{
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&num[i]);
+		}
+		scanf("%d",&x);
+		for(i=0;i<n;i++)
+		{
+			if(num[i]==x)
+			{
+				printf("%d\n",i);
+				break;
+			}
+		}
+		if(i==n)
+			printf("-1\n");
+
+	}
+	return 0;
+}
